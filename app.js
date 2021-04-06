@@ -1,5 +1,7 @@
+if(process.env.NODE_ENV!=='production'){
+    require("dotenv").config()
+}
 const express = require('express')
-const ejs = require("ejs")
 const path = require("path")
 const app = express()
 const mongoose = require('mongoose')
@@ -13,20 +15,23 @@ const cors = require("cors")
 const handlebars = require('handlebars')
 const { allowInsecurePrototypeAccess } = require('@handlebars/allow-prototype-access')
 
+require('./passport/passport-config')(passport);
 
-app.set("view engine", "ejs")
 app.use(express.static('public'))
 app.use(express.urlencoded({extended:true}))
+app.use(express.json())
 
 app.use(morgan('tiny'))
 
 app.use(cors())
 app.use(flash())
+
 app.use(session({
-    secret: 'somesecret',
+    secret: process.env.SECRET,
     resave: false,
     saveUninitialized: false
 }))
+
 
 app.engine('hbs', hbs({
     extname: "hbs",
@@ -40,4 +45,8 @@ app.set('view engine', 'hbs')
 app.use("/",require("./routes/user/index"))
 app.use("/admin", require("./routes/admin/index"))
 
-app.listen(port,(req,res)=> console.log(`App running at port ${port}`))
+mongoose.connect(process.env.MONGOURI, {useNewUrlParser: true, useUnifiedTopology: true},(err)=>{
+    console.log("Connected Database");
+    if(!err) app.listen(port, (req, res) => console.log(`App running at port ${port}`))
+    else throw err
+ })
