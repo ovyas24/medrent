@@ -2,12 +2,10 @@ const Product = require("../model/product")
 const Category = require("../model/category")
 const Admin = require("../model/admin")
 const order = require("../model/order")
-const BaseRepo = require("../helpers/BaseRepo")
+const { CreateUser, hashPassword } = require("../helpers/BaseRepo")
 
-class Repo extends BaseRepo {
-    constructor(){
-        super(Admin)
-    }
+class Repo {
+    constructor(){}
 
     AddCategory = async (body) => {
         try {
@@ -65,7 +63,7 @@ class Repo extends BaseRepo {
     //User Control
     AddUser = async (body) => {
         try {
-            const newUser = await this.CreateUser(body)
+            const newUser = await CreateUser(body)
             return newUser
         } catch (error) {
             return error

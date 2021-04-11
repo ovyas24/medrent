@@ -9,23 +9,23 @@ router.get('/',(req,res)=>{
 router.get("/products", async (req,res) => {
    const categorised = req.query.cat == "yes" ? true : false
    const products = categorised ?  await Repo.CategorisedProduct() : await Repo.AllProducts()
-   res.send(products)
+   res.json(products)
 })
 
 router.post("/category", async (req,res) => {
    const isCategory = await Repo.AddCategory(req.body)
-   res.send(isCategory)
+   res.json(isCategory)
 })
 
 router.post("/products", async (req,res) => {
    const isProductAdded = await Repo.AddProduct(req.body)
-   res.send(isProductAdded)
+   res.json(isProductAdded)
 })
 
 router.post("/addUser", async (req,res) => {
    console.log(req.body);
    const newUser = await Repo.AddUser(req.body)
-   res.send(newUser)
+   res.json(newUser)
 })
 
 module.exports = router

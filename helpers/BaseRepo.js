@@ -1,29 +1,22 @@
 const Admin = require("../model/admin")
 const bcrypt = require('bcryptjs')
 
-class BaseRepo {
-    constructor (modelType) {
-        this._modelType = modelType;
-    }
+    
 
-    CreateUser = async (body) => {
+module.exports = {
+    CreateUser : async (body) => {
+        console.log("i am trying");
         const { name, email, password, role } = body
-        const hashedPassword = await this.hashPassword(password)
+        const hashedPassword = await bcrypt.hash(password, 10)
         const newUser = new Admin({
-            anme,
+            name,
             email,
             password:hashedPassword,
             role
         })
 
-        const isUser = newUser.save()
+        const isUser = await newUser.save()
+        console.log("------",isUser);
         return isUser
     }
-
-    hashPassword = async (password) => {
-        const hashedPassword = await bcrypt.hash(password, 10)
-        return hashedPassword
-    }
 }
-
-module.exports = BaseRepo

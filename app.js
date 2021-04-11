@@ -49,4 +49,4 @@ mongoose.connect(process.env.MONGOURI, {useNewUrlParser: true, useUnifiedTopolog
     console.log("Connected Database");
     if(!err) app.listen(port, (req, res) => console.log(`App running at port ${port}`))
     else throw err
- })
+})
