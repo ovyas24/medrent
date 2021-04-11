@@ -4,26 +4,26 @@ const Service = () => {
     return (
         <div>
             <BreadCrumb name="Serive" />
-            <div class="cv-feature-two">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6">
-                            <div class="cv-feature-box">
-                                <div class="cv-feature-img">
+            <div className="cv-feature-two">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-3 col-md-6">
+                            <div className="cv-feature-box">
+                                <div className="cv-feature-img">
                                     <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="m59 54.141v-9.141h-5v-6h-12v-11h-7l-10.506-6.304c.237-3.338-1.585-6.518-4.583-8.012 2.376-.799 4.089-3.039 4.089-5.684 0-.369-.038-.728-.102-1.078l2.357-.506c1.08-.232 1.767-1.295 1.535-2.375l-4.584.985c-1.095-1.913-3.208-3.168-5.604-3.013-2.913.188-5.341 2.568-5.581 5.477-.245 2.97 1.676 5.528 4.353 6.281-2.503 1.56-3.942 4.468-3.538 7.498l1.164 8.731-1 12-6 19v1h7l-1-3h-.333l2.685-8.054.648 11.054h7l-1-3h-1.871l1.871-29 1.485-4.419 11.515 5.419h5v24.38c-.615.703-1 1.613-1 2.62 0 2.209 1.791 4 4 4s4-1.791 4-4c0-.732-.211-1.41-.555-2h8.109c-.343.59-.554 1.268-.554 2 0 2.209 1.791 4 4 4s4-1.791 4-4c0-1.862-1.278-3.413-3-3.859zm-16 4.859c-.552 0-1-.448-1-1s.448-1 1-1 1 .448 1 1-.448 1-1 1zm5-16h-4v-2h4zm10 16c-.552 0-1-.448-1-1s.448-1 1-1 1 .448 1 1-.448 1-1 1z" />
                                     </svg>
                                 </div>
-                                <div class="cv-feature-text">
+                                <div className="cv-feature-text">
                                     <h3>Free Shipping</h3>
                                     <p>When order is over $199</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="cv-feature-box">
-                                <div class="cv-feature-img">
+                        <div className="col-lg-3 col-md-6">
+                            <div className="cv-feature-box">
+                                <div className="cv-feature-img">
                                     <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                                         <g>
                                             <path d="m0 141.356h422v30h-422z" />
@@ -36,15 +36,15 @@ const Service = () => {
                                         </g>
                                     </svg>
                                 </div>
-                                <div class="cv-feature-text">
+                                <div className="cv-feature-text">
                                     <h3>Payment method</h3>
                                     <p>100% safe and secure</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="cv-feature-box">
-                                <div class="cv-feature-img">
+                        <div className="col-lg-3 col-md-6">
+                            <div className="cv-feature-box">
+                                <div className="cv-feature-img">
                                     <svg viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="m96 16a80.2 80.2 0 0 1 64 32h-8v16h24a8 8 0 0 0 7.59-5.47l8-24-15.18-5.06-3.175 9.53a95.994 95.994 0 0 0 -173.235 57h16a80.091 80.091 0 0 1 80-80z" />
@@ -54,15 +54,15 @@ const Service = () => {
                                             d="m40 96a56 56 0 1 0 56-56 56.063 56.063 0 0 0 -56 56zm80-32v16h-28a4 4 0 0 0 0 8h8a20 20 0 0 1 4 39.6v8.4h-16v-8h-16v-16h28a4 4 0 0 0 0-8h-8a20 20 0 0 1 -4-39.6v-8.4h16v8z" />
                                     </svg>
                                 </div>
-                                <div class="cv-feature-text">
+                                <div className="cv-feature-text">
                                     <h3>15 days return</h3>
                                     <p>Lorem ipsum dolar sit</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="cv-feature-box">
-                                <div class="cv-feature-img">
+                        <div className="col-lg-3 col-md-6">
+                            <div className="cv-feature-box">
+                                <div className="cv-feature-img">
                                     <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="m512 346.5c0-63.535156-36.449219-120.238281-91.039062-147.820312-1.695313 121.820312-100.460938 220.585937-222.28125 222.28125 27.582031 54.589843 84.285156 91.039062 147.820312 91.039062 29.789062 0 58.757812-7.933594 84.210938-23.007812l80.566406 22.285156-22.285156-80.566406c15.074218-25.453126 23.007812-54.421876 23.007812-84.210938zm0 0" />
@@ -70,7 +70,7 @@ const Service = () => {
                                             d="m391 195.5c0-107.800781-87.699219-195.5-195.5-195.5s-195.5 87.699219-195.5 195.5c0 35.132812 9.351562 69.339844 27.109375 99.371094l-26.390625 95.40625 95.410156-26.386719c30.03125 17.757813 64.238282 27.109375 99.371094 27.109375 107.800781 0 195.5-87.699219 195.5-195.5zm-225.5-45.5h-30c0-33.085938 26.914062-60 60-60s60 26.914062 60 60c0 16.792969-7.109375 32.933594-19.511719 44.277344l-25.488281 23.328125v23.394531h-30v-36.605469l35.234375-32.25c6.296875-5.761719 9.765625-13.625 9.765625-22.144531 0-16.542969-13.457031-30-30-30s-30 13.457031-30 30zm15 121h30v30h-30zm0 0" />
                                     </svg>
                                 </div>
-                                <div class="cv-feature-text">
+                                <div className="cv-feature-text">
                                     <h3>24x7 support</h3>
                                     <p>By qualified team</p>
                                 </div>
@@ -79,17 +79,17 @@ const Service = () => {
                     </div>
                 </div>
             </div>
-            <div class="cv-service">
-                <div class="container">
-                    <div class="cv-heading">
+            <div className="cv-service">
+                <div className="container">
+                    <div className="cv-heading">
                         <h1>Best Services</h1>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6">
-                            <ul class="cv-service-ul">
+                    <div className="row">
+                        <div className="col-lg-4 col-md-6">
+                            <ul className="cv-service-ul">
                                 <li>
-                                    <div class="cv-service-box align-items-center">
-                                        <div class="cv-service-icon">
+                                    <div className="cv-service-box align-items-center">
+                                        <div className="cv-service-icon">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="-38 0 512 512.00142">
                                                 <path
                                                     d="M 217.996094 158.457031 C 164.203125 158.457031 120.441406 202.21875 120.441406 256.007812 C 120.441406 309.800781 164.203125 353.5625 217.996094 353.5625 C 271.785156 353.5625 315.546875 309.800781 315.546875 256.007812 C 315.546875 202.21875 271.785156 158.457031 217.996094 158.457031 Z M 275.914062 237.636719 L 206.027344 307.523438 C 203.09375 310.457031 199.246094 311.925781 195.402344 311.925781 C 191.558594 311.925781 187.714844 310.460938 184.78125 307.523438 L 158.074219 280.816406 C 152.207031 274.953125 152.207031 265.441406 158.074219 259.574219 C 163.9375 253.707031 173.449219 253.707031 179.316406 259.574219 L 195.402344 275.660156 L 254.671875 216.394531 C 260.535156 210.527344 270.046875 210.527344 275.914062 216.394531 C 281.78125 222.257812 281.78125 231.769531 275.914062 237.636719 Z M 275.914062 237.636719 " />
@@ -97,14 +97,14 @@ const Service = () => {
                                                     d="M 435.488281 138.917969 L 435.472656 138.519531 C 435.25 133.601562 435.101562 128.398438 435.011719 122.609375 C 434.59375 94.378906 412.152344 71.027344 383.917969 69.449219 C 325.050781 66.164062 279.511719 46.96875 240.601562 9.042969 L 240.269531 8.726562 C 227.578125 -2.910156 208.433594 -2.910156 195.738281 8.726562 L 195.40625 9.042969 C 156.496094 46.96875 110.957031 66.164062 52.089844 69.453125 C 23.859375 71.027344 1.414062 94.378906 0.996094 122.613281 C 0.910156 128.363281 0.757812 133.566406 0.535156 138.519531 L 0.511719 139.445312 C -0.632812 199.472656 -2.054688 274.179688 22.9375 341.988281 C 36.679688 379.277344 57.492188 411.691406 84.792969 438.335938 C 115.886719 468.679688 156.613281 492.769531 205.839844 509.933594 C 207.441406 510.492188 209.105469 510.945312 210.800781 511.285156 C 213.191406 511.761719 215.597656 512 218.003906 512 C 220.410156 512 222.820312 511.761719 225.207031 511.285156 C 226.902344 510.945312 228.578125 510.488281 230.1875 509.925781 C 279.355469 492.730469 320.039062 468.628906 351.105469 438.289062 C 378.394531 411.636719 399.207031 379.214844 412.960938 341.917969 C 438.046875 273.90625 436.628906 199.058594 435.488281 138.917969 Z M 217.996094 383.605469 C 147.636719 383.605469 90.398438 326.367188 90.398438 256.007812 C 90.398438 185.648438 147.636719 128.410156 217.996094 128.410156 C 288.351562 128.410156 345.59375 185.648438 345.59375 256.007812 C 345.59375 326.367188 288.351562 383.605469 217.996094 383.605469 Z M 217.996094 383.605469 " />
                                             </svg>
                                         </div>
-                                        <div class="cv-service-text">
+                                        <div className="cv-service-text">
                                             <h3>qualified products</h3>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="cv-service-box align-items-center">
-                                        <div class="cv-service-icon">
+                                    <div className="cv-service-box align-items-center">
+                                        <div className="cv-service-icon">
                                             <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                                                 <g>
                                                     <path
@@ -114,14 +114,14 @@ const Service = () => {
                                                 </g>
                                             </svg>
                                         </div>
-                                        <div class="cv-service-text">
+                                        <div className="cv-service-text">
                                             <h3>tested products</h3>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="cv-service-box align-items-center">
-                                        <div class="cv-service-icon">
+                                    <div className="cv-service-box align-items-center">
+                                        <div className="cv-service-icon">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                 <path
                                                     d="M384,0H128c-24.431,0-44.308,19.876-44.308,44.308v93.538c0,24.431,19.876,44.308,44.308,44.308h92.344l25.213,25.212
@@ -149,14 +149,14 @@ const Service = () => {
                                                 c8.157,0,14.769-6.613,14.769-14.769C408.615,437.51,360.029,388.923,300.308,388.923z" />
                                             </svg>
                                         </div>
-                                        <div class="cv-service-text">
+                                        <div className="cv-service-text">
                                             <h3>Top rated</h3>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="cv-service-box align-items-center">
-                                        <div class="cv-service-icon align-items-center">
+                                    <div className="cv-service-box align-items-center">
+                                        <div className="cv-service-icon align-items-center">
                                             <svg viewBox="0 0 512.114 512.114" xmlns="http://www.w3.org/2000/svg">
                                                 <g>
                                                     <path
@@ -169,21 +169,21 @@ const Service = () => {
                                                 </g>
                                             </svg>
                                         </div>
-                                        <div class="cv-service-text">
+                                        <div className="cv-service-text">
                                             <h3>Fast delivery</h3>
                                         </div>
                                     </div>
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-lg-4 col-md-6 order-lg-last">
-                            <ul class="cv-service-ul cv-service-ul-right">
+                        <div className="col-lg-4 col-md-6 order-lg-last">
+                            <ul className="cv-service-ul cv-service-ul-right">
                                 <li>
-                                    <div class="cv-service-box align-items-center">
-                                        <div class="cv-service-text">
+                                    <div className="cv-service-box align-items-center">
+                                        <div className="cv-service-text">
                                             <h3>Varified products</h3>
                                         </div>
-                                        <div class="cv-service-icon">
+                                        <div className="cv-service-icon">
                                             <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                                                 <g>
                                                     <path d="m87.161 209.789 168.839 55.967 168.839-55.967-168.839-55.966z" />
@@ -202,11 +202,11 @@ const Service = () => {
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="cv-service-box align-items-center">
-                                        <div class="cv-service-text">
+                                    <div className="cv-service-box align-items-center">
+                                        <div className="cv-service-text">
                                             <h3>easy Payment</h3>
                                         </div>
-                                        <div class="cv-service-icon">
+                                        <div className="cv-service-icon">
                                             <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                                                 <g>
                                                     <path d="m0 141.356h422v30h-422z"></path>
@@ -225,11 +225,11 @@ const Service = () => {
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="cv-service-box align-items-center">
-                                        <div class="cv-service-text">
+                                    <div className="cv-service-box align-items-center">
+                                        <div className="cv-service-text">
                                             <h3>best support</h3>
                                         </div>
-                                        <div class="cv-service-icon">
+                                        <div className="cv-service-icon">
                                             <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                                                 <path
                                                     d="m512 346.5c0-63.535156-36.449219-120.238281-91.039062-147.820312-1.695313 121.820312-100.460938 220.585937-222.28125 222.28125 27.582031 54.589843 84.285156 91.039062 147.820312 91.039062 29.789062 0 58.757812-7.933594 84.210938-23.007812l80.566406 22.285156-22.285156-80.566406c15.074218-25.453126 23.007812-54.421876 23.007812-84.210938zm0 0">
@@ -242,11 +242,11 @@ const Service = () => {
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="cv-service-box align-items-center">
-                                        <div class="cv-service-text">
+                                    <div className="cv-service-box align-items-center">
+                                        <div className="cv-service-text">
                                             <h3>return policy</h3>
                                         </div>
-                                        <div class="cv-service-icon">
+                                        <div className="cv-service-icon">
                                             <svg viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg">
                                                 <path
                                                     d="m96 16a80.2 80.2 0 0 1 64 32h-8v16h24a8 8 0 0 0 7.59-5.47l8-24-15.18-5.06-3.175 9.53a95.994 95.994 0 0 0 -173.235 57h16a80.091 80.091 0 0 1 80-80z">
@@ -263,21 +263,21 @@ const Service = () => {
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-lg-4">
-                            <div class="cv-service-img">
-                                <img src="https://via.placeholder.com/336x460" alt="image" class="img-fluid" />
+                        <div className="col-lg-4">
+                            <div className="cv-service-img">
+                                <img src="https://via.placeholder.com/336x460" alt="image" className="img-fluid" />
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div style={{"margin-bottom": '20px'}}></div>
-            <div class="cv-help spacer-top spacer-bottom">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="cv-help-box">
-                                <div class="cv-help-icon">
+            <div className="cv-help spacer-top spacer-bottom">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-6">
+                            <div className="cv-help-box">
+                                <div className="cv-help-icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                         <path
                                             d="M256.002,182.774c-12.718,0-21.761,5.37-21.761,13.283V303.73c0,6.782,9.044,13.565,21.761,13.565
@@ -303,9 +303,9 @@ const Service = () => {
                         </p>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="cv-help-box cv-help-box-two">
-                                <div class="cv-help-icon">
+                        <div className="col-md-6">
+                            <div className="cv-help-box cv-help-box-two">
+                                <div className="cv-help-icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                         <path
                                             d="M256.002,182.774c-12.718,0-21.761,5.37-21.761,13.283V303.73c0,6.782,9.044,13.565,21.761,13.565
@@ -327,10 +327,10 @@ const Service = () => {
                             dolore</p>
                             </div>
                         </div>
-                        <div class="col-md-12">
-                            <div class="cv-help-quote">
+                        <div className="col-md-12">
+                            <div className="cv-help-quote">
                                 <h2>Get a free quote</h2>
-                                <a href="contact.html" class="cv-get-btn">Get a qoute</a>
+                                <a href="contact.html" className="cv-get-btn">Get a qoute</a>
                             </div>
                         </div>
                     </div>

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-const Product = ({ product }) => {
+const Product = ({ product, size }) => {
     return (<div className="col-lg-3 col-sm-6">
         <div className="cv-product-box">
             <div className="cv-product-img">
