@@ -5,6 +5,7 @@ import Shop from './components/Shop';
 import About from './components/about';
 import Contact from './components/contact';
 import Nav from "./components/Nav";
+import Single_Product from "./components/single-product";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path="/about" exact component={About} />
       <Route path="/service" exact component={Service} />
       <Route path="/contact" exact component={Contact} />
+      <Route path="/single-product" component={Single_Product} />
       </div>
     </Router>
   );

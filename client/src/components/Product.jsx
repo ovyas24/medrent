@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const Product = ({ product }) => {
     return (<div className="col-lg-3 col-sm-6">
         <div className="cv-product-box">
@@ -6,7 +8,7 @@ const Product = ({ product }) => {
 
             </div>
             <div className="cv-product-data">
-                <a href="product-single.html" className="cv-price-title">{product.name}</a>
+                <Link to="/single-product" className="cv-price-title">{product.name}</Link>
                 <p className="cv-pdoduct-price">{product.price}</p>
                 <a href="javascript:;" className="cv-price-cart">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -24,7 +26,7 @@ const Product = ({ product }) => {
                         c0,10.477-8.523,19-19,19s-19-8.523-19-19S190.523,434,201,434z"></path>
                         </g>
                     </svg>
-        Cart</a>
+        Learn More</a>
             </div>
         </div>
     </div>)
