@@ -5,7 +5,7 @@ const order = require("../model/order")
 const { CreateUser, hashPassword } = require("../helpers/BaseRepo")
 
 class Repo {
-    constructor(){}
+    constructor() { }
 
     AddCategory = async (body) => {
         try {
@@ -14,7 +14,7 @@ class Repo {
                 name,
                 description
             })
-    
+
             const isAdded = await newCategory.save()
             return isAdded
         } catch (error) {
@@ -33,8 +33,8 @@ class Repo {
             })
 
             const isProductAdded = await newProduct.save()
-            if(isProductAdded){
-                const isCategoryUpdated = await Category.updateOne({_id: id},{$push : { products : isProductAdded._id }})
+            if (isProductAdded) {
+                const isCategoryUpdated = await Category.updateOne({ _id: id }, { $push: { products: isProductAdded._id } })
                 return isCategoryUpdated
             }
         } catch (error) {
@@ -44,7 +44,22 @@ class Repo {
 
     AllProducts = async () => {
         try {
-            const products = await  Product.find({})
+            const products = await Product.find({})
+            return products
+        } catch (error) {
+            return error
+        }
+    }
+
+    Shop = async (search) => {
+        try {
+            const products = await this.AllProducts()
+            if (search) {
+                let searchedProduct = products.filter((product) => {
+                    if (product.name.includes(search)) return product
+                })
+                return searchedProduct
+            }
             return products
         } catch (error) {
             return error

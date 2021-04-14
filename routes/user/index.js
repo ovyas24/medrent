@@ -1,17 +1,14 @@
 const express = require('express')
+const Repo = require('../../controllers/dashboard')
 const router = express.Router()
 
-router.get('/',(req,res)=>{
-    res.render('index')
-    // res.render("index")
-})
 
-router.get('/about',(req,res)=>{
-    res.render("about")
-})
 
-router.get("/service",(req,res)=>{
-    res.render("services")
+router.get("/shop", async (req,res) => {
+    const products = await Repo.Shop(req.query.search)
+    res.json(products)
 })
+router.get("/product/:id")
+router.get("/newRelease") 
 
 module.exports = router

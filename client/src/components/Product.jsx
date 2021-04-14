@@ -1,14 +1,15 @@
-import { Link } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 
-const Product = ({ product, size }) => {
-    return (<div className="col-lg-3 col-sm-6">
+const Product = () => {
+    const { product } = useParams();
+    return (<div className="col-lg-3 col-sm-6 float-left">
         <div className="cv-product-box">
             <div className="cv-product-img">
                 <img src="https://via.placeholder.com/253x253" alt="image" className="img-fluid" />
 
             </div>
             <div className="cv-product-data">
-                <Link to="/single-product" className="cv-price-title">{product.name}</Link>
+                <Link to="/single-product" props={{product:product}} className="cv-price-title">{product.name}</Link>
                 <p className="cv-pdoduct-price">{product.price}</p>
                 <a href="javascript:;" className="cv-price-cart">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">

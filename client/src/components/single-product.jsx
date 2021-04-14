@@ -1,4 +1,4 @@
-const Single_Product = () => {
+const Single_Product = ({product}) => {
     return (
         <div>
             <div class="cv-product-single spacer-top spacer-bottom">
@@ -13,8 +13,8 @@ const Single_Product = () => {
                                 </div>
                                 <div class="col-sm-7">
                                     <div class="cv-prod-content">
-                                        <h2 class="cv-price-title">Plastic face shield</h2>
-                                        <p class="cv-pdoduct-price"><del>$170</del> $165</p>
+                                        <h2 class="cv-price-title">{product.name}</h2>
+                                        <p class="cv-pdoduct-price">{product.price}</p>
                                         <div class="cv-prod-category">
                                             <span>Category :</span>
                                             <a href="#" class="cv-prod-category"> Face Mask</a>,
