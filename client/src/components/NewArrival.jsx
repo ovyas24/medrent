@@ -1,6 +1,6 @@
 import Product from "./Product"
 
-const Products = [
+const products = [
     {
         name:"moter",
         price:124
@@ -43,7 +43,7 @@ const NewArrival = () => {
                     <h1>New arrivals</h1>
                 </div>
                 <div className="row">
-                    {Products.map(product => {
+                    {products.map(product => {
                         return (
                             <Product product={product} />
                         )

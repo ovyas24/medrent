@@ -1,4 +1,10 @@
 import NewArrival from "./NewArrival"
+import '../Static/Client/css/bootstrap.min.css'
+import '../Static/Client/css/all.min.css'
+import '../Static/Client/css/font.css'
+import '../Static/Client/css/font.css'
+import '../Static/Client/css/swiper.min.css'
+import '../Static/Client/images/fav.png'
 
 const Home = () => {
     return (

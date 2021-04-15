@@ -48,4 +48,9 @@ router.post("/login", async (req,res)=>{
    }
 })
 
+router.post("/change-password", passport.authenticate('jwt', {session:false}) , async (req,res) => {
+   let change = {msg :"hello"}
+   res.json(change)
+})
+
 module.exports = router

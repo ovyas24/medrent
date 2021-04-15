@@ -1,7 +1,6 @@
 import { Link, useParams } from "react-router-dom"
 
-const Product = () => {
-    const { product } = useParams();
+const Product = ({ product }) => {
     return (<div className="col-lg-3 col-sm-6 float-left">
         <div className="cv-product-box">
             <div className="cv-product-img">
